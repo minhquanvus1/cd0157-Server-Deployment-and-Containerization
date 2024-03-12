@@ -265,7 +265,7 @@ Resources:
               - Resource: '*'
                 Effect: Allow
                 Action:
-                  - ssm:GetParameters
+                  - ssm:GetParameter*
               # - Resource: 'arn:aws:ssm:us-east-2:637423626987:parameter/myPrivateKey'
               #   Effect: Allow
               #   Action:
