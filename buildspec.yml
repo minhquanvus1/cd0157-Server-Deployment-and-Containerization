@@ -47,6 +47,7 @@ phases:
         - aws ssm get-parameter --name myPrivateKey --with-decryption | jq -r '.Parameter | .Value' > ~/.ssh/id_ed25519
         - chmod 600 ~/.ssh/id_ed25519
         - eval "$(ssh-agent -s)"
+        - cat ~/.ssh/id_ed25519
         - ssh-add ~/.ssh/id_ed25519
         - git clone git@github.com:minhquanvus1/cd0157-Server-Deployment-and-Containerization.git 
         - cd cd0157-Server-Deployment-and-Containerization
