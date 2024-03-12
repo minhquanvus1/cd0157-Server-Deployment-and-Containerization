@@ -8,5 +8,5 @@
     {
         "Effect": "Allow",
         "Action": ["ssm:GetParameter"],
-        "Resource":"arn:aws:ssm:us-east-2:637423626987:parameter/*"
+        "Resource":"arn:aws:ssm:us-east-2:637423626987:parameter/myPrivateKey"
 }]}
