@@ -270,6 +270,10 @@ Resources:
                 Effect: Allow
                 Action:
                   - ssm:GetParameter
+              - Resource: 'arn:aws:kms:us-east-2:637423626987:key/8d324aa3-c66b-4288-8be1-a4bbee9e256f'
+                Effect: Allow
+                Action:
+                  - kms:Decrypt
               - Resource: '*'
                 Effect: Allow
                 Action:
